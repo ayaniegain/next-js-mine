@@ -1,10 +1,13 @@
 import React from 'react'
 
-function ShopDetails({ params}) {
+function ShopDetails({ params:{slug}}) {
 
-    { slug: ['a'] }
   return (
-    <div>ShopDetails{params.slug}</div>
+
+    slug.length==1?
+    <div>ShopDetails{slug}</div>
+    :
+    <h2>hello</h2>
   )
 }
 
